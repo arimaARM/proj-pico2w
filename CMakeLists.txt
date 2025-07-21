@@ -46,7 +46,7 @@ pico_set_program_version(proj-pico2w "0.1")
 
 # Modify the below lines to enable/disable output over UART/USB
 pico_enable_stdio_uart(proj-pico2w 0)
-pico_enable_stdio_usb(proj-pico2w 0)
+pico_enable_stdio_usb(proj-pico2w 1)
 
 # Add the standard library to the build
 target_link_libraries(proj-pico2w
