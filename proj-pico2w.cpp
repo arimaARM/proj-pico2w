@@ -1,4 +1,3 @@
-#include <iostream>
 #include <cmath> 
 #include <stdio.h>
 #include "pico/stdlib.h"
@@ -23,7 +22,6 @@
 #define I2C_SDA //select your port 
 #define I2C_SCL //select your port 
 */
-using namespace std; 
 
 int pico_led_init(void) {
 #if defined(PICO_DEFAULT_LED_PIN)
