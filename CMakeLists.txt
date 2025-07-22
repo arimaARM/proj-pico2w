@@ -56,13 +56,5 @@ target_link_libraries(proj-pico2w
 target_include_directories(proj-pico2w PRIVATE
         ${CMAKE_CURRENT_LIST_DIR}
 )
-
-# Add any user requested libraries
-target_link_libraries(proj-pico2w 
-        hardware_i2c
-
-        
-        )
-
 pico_add_extra_outputs(proj-pico2w)
 
