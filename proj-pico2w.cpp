@@ -15,7 +15,7 @@
 
 
 #ifndef LED_DELAY_MS
-#define LED_DELAY_MS 100
+#define LED_DELAY_MS 500
 #endif
 
 /*
@@ -72,14 +72,17 @@ int main()
         if(!gpio_get(BUTTON_PIN_1)){
             pico_set_led(true);
             sleep_ms(LED_DELAY_MS);
+            pico_set_led(false);
         }
         if(!gpio_get(BUTTON_PIN_2)){
             pico_set_led(true);
             sleep_ms(LED_DELAY_MS);
+            pico_set_led(false);
         }
         if(!gpio_get(BUTTON_PIN_3)){
             pico_set_led(true);
             sleep_ms(LED_DELAY_MS);
+            pico_set_led(false);
         }
     }
 
