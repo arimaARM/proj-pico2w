@@ -50,7 +50,7 @@ pico_enable_stdio_usb(proj-pico2w 1)
 
 # Add the standard library to the build
 target_link_libraries(proj-pico2w
-        pico_stdlib)
+        pico_stdlib hardware_gpio pico_cyw43_arch hardware_i2c)
 
 # Add the standard include files to the build
 target_include_directories(proj-pico2w PRIVATE
@@ -60,6 +60,7 @@ target_include_directories(proj-pico2w PRIVATE
 # Add any user requested libraries
 target_link_libraries(proj-pico2w 
         hardware_i2c
+
         
         )
 

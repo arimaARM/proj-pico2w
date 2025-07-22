@@ -63,7 +63,7 @@ int main()
 
         int rc = pico_led_init(); 
     if (rc != PICO_OK){
-        cout << "Initiliation failed" << endl; 
+        printf("Initialisation failed");
     }   
 
      while(true){
