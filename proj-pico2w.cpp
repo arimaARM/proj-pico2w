@@ -17,11 +17,11 @@
 #define LED_DELAY_MS 500
 #endif
 
-/*
+
 #define I2C_PORT i2c0
-#define I2C_SDA //select your port 
-#define I2C_SCL //select your port 
-*/
+#define I2C_SDA 
+#define I2C_SCL  
+
 
 int pico_led_init(void) {
 #if defined(PICO_DEFAULT_LED_PIN)
@@ -47,7 +47,12 @@ int main()
 {
     stdio_init_all();
 
-    //i2c_init(I2C_PORT, 400*1000); // I2C Initialisation. Using it at 400Khz.
+    i2c_init(I2C_PORT, 400*1000); // I2C Initialisation. Using it at 400Khz.
+
+    gpio_set_function(I2C_SDA, GPIO_FUNC_I2C);
+    gpio_set_function(I2C_SCL, GPIO_FUNC_I2C);
+    gpio_pull_up(I2C_SDA);
+    gpio_pull_up(I2C_SCL);
 
     gpio_init(BUTTON_PIN_1);
     gpio_set_dir(BUTTON_PIN_1, GPIO_IN);
@@ -84,14 +89,5 @@ int main()
             pico_set_led(false);
         }
     }
-
-
-    /*
-    gpio_set_function(I2C_SDA, GPIO_FUNC_I2C);
-    gpio_set_function(I2C_SCL, GPIO_FUNC_I2C);
-    gpio_pull_up(I2C_SDA);
-    gpio_pull_up(I2C_SCL);       // For more examples of I2C use see https://github.com/raspberrypi/pico-examples/tree/master/i2c
-    */
-
-   
+     
 }
