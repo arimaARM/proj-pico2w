@@ -19,8 +19,8 @@
 
 
 #define I2C_PORT i2c0
-#define I2C_SDA 
-#define I2C_SCL  
+#define I2C_SDA 16
+#define I2C_SCL 17
 
 
 int pico_led_init(void) {
