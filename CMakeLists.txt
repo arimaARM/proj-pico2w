@@ -37,6 +37,9 @@ set(PICO_CXX_ENABLE_RTTI 1)
 # Initialise the Raspberry Pi Pico SDK
 pico_sdk_init()
 
+set(PICO_SSD1306_DIR "/home/user/c++/proj-pico2w/lib/pico-ssd1306")
+include(pico-ssd1306.cmake)
+
 # Add executable. Default name is the project name, version 0.1
 
 add_executable(proj-pico2w proj-pico2w.cpp )
@@ -45,16 +48,15 @@ pico_set_program_name(proj-pico2w "proj-pico2w")
 pico_set_program_version(proj-pico2w "0.1")
 
 # Modify the below lines to enable/disable output over UART/USB
-pico_enable_stdio_uart(proj-pico2w 0)
-pico_enable_stdio_usb(proj-pico2w 1)
+pico_enable_stdio_uart(proj-pico2w 1)
+pico_enable_stdio_usb(proj-pico2w 0)
 
 # Add the standard library to the build
 target_link_libraries(proj-pico2w
-        pico_stdlib hardware_i2c hardware_gpio pico_cyw43_arch_none)
+        pico_stdlib hardware_i2c hardware_gpio pico_cyw43_arch_none pico_ssd1306)
 
 # Add the standard include files to the build
 target_include_directories(proj-pico2w PRIVATE
         ${CMAKE_CURRENT_LIST_DIR}
 )
 pico_add_extra_outputs(proj-pico2w)
-

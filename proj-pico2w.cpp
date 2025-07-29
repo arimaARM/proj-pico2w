@@ -5,10 +5,12 @@
 #include "pico/stdlib.h"
 #include "hardware/gpio.h"
 #include "hardware/i2c.h"
-/*
-#include "ssd1306.h"
-#include "image.h"
-*/
+#include <cstdio>
+
+extern "C"{
+#include <ssd1306.h>
+}
+
 #ifdef CYW43_WL_GPIO_LED_PIN
 #include "pico/cyw43_arch.h"
 #endif
