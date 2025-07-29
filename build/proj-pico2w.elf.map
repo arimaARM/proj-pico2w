@@ -2609,12 +2609,12 @@ Discarded input sections
  .debug_frame   0x00000000      0x320 CMakeFiles/proj-pico2w.dir/lib/pico-ssd1306/ssd1306.c.o
  .ARM.attributes
                 0x00000000       0x38 CMakeFiles/proj-pico2w.dir/lib/pico-ssd1306/ssd1306.c.o
- .text          0x00000000        0x0 pico-sdk/src/rp2350/boot_stage2/CMakeFiles/bs2_default_library.dir/bs2_default_padded_checksummed.S.o
- .data          0x00000000        0x0 pico-sdk/src/rp2350/boot_stage2/CMakeFiles/bs2_default_library.dir/bs2_default_padded_checksummed.S.o
- .bss           0x00000000        0x0 pico-sdk/src/rp2350/boot_stage2/CMakeFiles/bs2_default_library.dir/bs2_default_padded_checksummed.S.o
- .boot2         0x00000000      0x100 pico-sdk/src/rp2350/boot_stage2/CMakeFiles/bs2_default_library.dir/bs2_default_padded_checksummed.S.o
+ .text          0x00000000        0x0 pico-sdk/src/rp2350/boot_stage2/CMakeFiles/bs2_default_library.dir/./bs2_default_padded_checksummed.S.o
+ .data          0x00000000        0x0 pico-sdk/src/rp2350/boot_stage2/CMakeFiles/bs2_default_library.dir/./bs2_default_padded_checksummed.S.o
+ .bss           0x00000000        0x0 pico-sdk/src/rp2350/boot_stage2/CMakeFiles/bs2_default_library.dir/./bs2_default_padded_checksummed.S.o
+ .boot2         0x00000000      0x100 pico-sdk/src/rp2350/boot_stage2/CMakeFiles/bs2_default_library.dir/./bs2_default_padded_checksummed.S.o
  .ARM.attributes
-                0x00000000       0x22 pico-sdk/src/rp2350/boot_stage2/CMakeFiles/bs2_default_library.dir/bs2_default_padded_checksummed.S.o
+                0x00000000       0x22 pico-sdk/src/rp2350/boot_stage2/CMakeFiles/bs2_default_library.dir/./bs2_default_padded_checksummed.S.o
  .text          0x00000000        0x0 /home/user/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libm.a(libm_a-wf_sqrt.o)
  .data          0x00000000        0x0 /home/user/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libm.a(libm_a-wf_sqrt.o)
  .bss           0x00000000        0x0 /home/user/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libm.a(libm_a-wf_sqrt.o)
@@ -4479,7 +4479,7 @@ LOAD CMakeFiles/proj-pico2w.dir/home/user/.pico-sdk/sdk/2.1.1/src/rp2_common/pic
 LOAD CMakeFiles/proj-pico2w.dir/home/user/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.o
 LOAD CMakeFiles/proj-pico2w.dir/home/user/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_async_context/async_context_base.c.o
 LOAD CMakeFiles/proj-pico2w.dir/lib/pico-ssd1306/ssd1306.c.o
-LOAD pico-sdk/src/rp2350/boot_stage2/CMakeFiles/bs2_default_library.dir/bs2_default_padded_checksummed.S.o
+LOAD pico-sdk/src/rp2350/boot_stage2/CMakeFiles/bs2_default_library.dir/./bs2_default_padded_checksummed.S.o
 LOAD libpico_ssd1306.a
 LOAD /home/user/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libstdc++.a
 LOAD /home/user/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libm.a
