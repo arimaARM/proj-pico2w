@@ -145,3 +145,5 @@
 2313	2566	1753817210365094675	CMakeFiles/proj-pico2w.dir/lib/pico-ssd1306/ssd1306.c.o	4a444eb7d5d953ae
 1893	2904	1753817209945087803	CMakeFiles/proj-pico2w.dir/home/user/.pico-sdk/sdk/2.1.1/lib/cyw43-driver/src/cyw43_ll.c.o	ff5f2e2ffe4436ab
 2904	2963	1753817210956104355	proj-pico2w.elf	cbdd9dd858d9c5bf
+10	128	1753818049609469514	CMakeFiles/proj-pico2w.dir/proj-pico2w.cpp.o	80a48b18baf09b1d
+128	176	1753818049727472460	proj-pico2w.elf	cbdd9dd858d9c5bf

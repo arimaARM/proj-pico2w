@@ -1,58 +1,98 @@
-#include <cmath> 
-#include <stdio.h>
-#include <stdint.h>
-#include <string.h>
-#include "pico/stdlib.h"
-#include "hardware/gpio.h"
-#include "hardware/i2c.h"
-#include <cstdio>
+/**
+ * Jon Durrant.
+ *
+ * Blink LED on Raspberry PICO
+ * Display the word blink on an Oled screen
+ */
 
+#include "pico/stdlib.h"
 extern "C"{
 #include <ssd1306.h>
 }
+#include <cstdio>
 
-#ifdef CYW43_WL_GPIO_LED_PIN
-#include "pico/cyw43_arch.h"
-#endif
+#define DELAY 500 // in microseconds
 
-#define BUTTON_PIN_RIGHT 2
-#define BUTTON_PIN_LEFT 6
-#define BUTTON_PIN_UP 4
-#define BUTTON_PIN_DOWN 5
-#define BUTTON_PIN_CENTER 7
 
-#define I2C_PORT i2c0
-#define I2C_SDA 16
-#define I2C_SCL 17
 
-int main()
-{
-    stdio_init_all();
+/***
+ * Draw the word testing on the Oled Screen
+ */
+void drawTest(ssd1306_t *pOled){
+	ssd1306_draw_string(
+			pOled,
+			0,
+			2,
+			2,
+			"Testing");
 
-    i2c_init(I2C_PORT, 400*1000);
+	ssd1306_draw_line(
+			pOled,
+			2, 25,
+			80, 25);
+}
 
-    gpio_set_function(I2C_SDA, GPIO_FUNC_I2C);
-    gpio_set_function(I2C_SCL, GPIO_FUNC_I2C);
-    gpio_pull_up(I2C_SDA);
-    gpio_pull_up(I2C_SCL);
+/***
+ * Deaw the word Testing amd Blink on the Screen
+ */
+void drawBlink(ssd1306_t *pOled){
+	drawTest(pOled);
+	ssd1306_draw_string(
+			pOled,
+			0,
+			30,
+			2,
+			"Blink");
+}
 
-    gpio_init(BUTTON_PIN_RIGHT);
-    gpio_set_dir(BUTTON_PIN_RIGHT, GPIO_IN);
-    gpio_pull_up(BUTTON_PIN_RIGHT);
+int main() {
+	stdio_init_all();
+	sleep_ms(2000);
+	printf("GO\n");
 
-    gpio_init(BUTTON_PIN_LEFT);
-    gpio_set_dir(BUTTON_PIN_LEFT, GPIO_IN);
-    gpio_pull_up(BUTTON_PIN_LEFT);
+	//Setup the OLED Screen
+	i2c_init(i2c0, 400000);
+	gpio_pull_up(12);
+	gpio_pull_up(13);
+	gpio_set_function(12, GPIO_FUNC_I2C);
+	gpio_set_function(13, GPIO_FUNC_I2C);
+	ssd1306_t oled;
+	oled.external_vcc=false;
+	bool res = ssd1306_init(
+			&oled,
+			128,
+			64,
+			0x3c,
+			i2c0);
 
-    gpio_init(BUTTON_PIN_UP);
-    gpio_set_dir(BUTTON_PIN_UP, GPIO_IN);
-    gpio_pull_up(BUTTON_PIN_UP);
+	//If setup OK then write the test text on OLED
+	if (res){
+		ssd1306_clear(&oled);
+		drawTest(&oled);
+		ssd1306_show(&oled);
+	} else {
+		printf("Oled Init failed\n");
+	}
 
-    gpio_init(BUTTON_PIN_DOWN);
-    gpio_set_dir(BUTTON_PIN_DOWN, GPIO_IN);
-    gpio_pull_up(BUTTON_PIN_DOWN);
 
-    gpio_init(BUTTON_PIN_CENTER);
-    gpio_set_dir(BUTTON_PIN_CENTER, GPIO_IN);
-    gpio_pull_up(BUTTON_PIN_CENTER);
+
+    const uint LED_PIN = 2;
+    gpio_init(LED_PIN);
+
+    gpio_set_dir(LED_PIN, GPIO_OUT);
+
+    while (true) { // Loop forever
+        gpio_put(LED_PIN, 1);
+        ssd1306_clear(&oled);
+		drawBlink(&oled);
+		ssd1306_show(&oled);
+        sleep_ms(DELAY);
+
+        gpio_put(LED_PIN, 0);
+        ssd1306_clear(&oled);
+		drawTest(&oled);
+		ssd1306_show(&oled);
+        sleep_ms(DELAY);
+    }
+
 }
