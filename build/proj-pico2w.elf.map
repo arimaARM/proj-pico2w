@@ -3923,178 +3923,178 @@ LOAD /home/user/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.
                 0x100046c0                        __boot2_end__ = .
                 0x00000001                        ASSERT (((__boot2_end__ - __boot2_start__) <= 0x100), ERROR: Pico second stage bootloader must be no more than 256 bytes in size)
 
-.rodata         0x100046c0      0x440
+.rodata         0x100046c0      0x438
  *(EXCLUDE_FILE(*libm.a: *libc.a:*lib_a-mem*.o *libgcc.a:) .rodata*)
  .rodata._Z18get_pressed_buttonv.str1.4
-                0x100046c0      0x18d CMakeFiles/proj-pico2w.dir/proj-pico2w.cpp.o
+                0x100046c0      0x185 CMakeFiles/proj-pico2w.dir/proj-pico2w.cpp.o
                                  0x29 (size before relaxing)
  .rodata.main.str1.4
-                0x1000484d       0x37 CMakeFiles/proj-pico2w.dir/proj-pico2w.cpp.o
+                0x10004845       0x2f CMakeFiles/proj-pico2w.dir/proj-pico2w.cpp.o
  .rodata.panic.str1.4
-                0x1000484d       0x12 CMakeFiles/proj-pico2w.dir/home/user/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_platform_panic/panic.c.o
+                0x10004845       0x12 CMakeFiles/proj-pico2w.dir/home/user/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_platform_panic/panic.c.o
  .rodata.timer_hardware_alarm_claim.str1.4
-                0x1000484d       0x22 CMakeFiles/proj-pico2w.dir/home/user/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_timer/timer.c.o
+                0x10004845       0x22 CMakeFiles/proj-pico2w.dir/home/user/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_timer/timer.c.o
  .rodata.hard_assertion_failure.str1.4
-                0x1000484d        0xc CMakeFiles/proj-pico2w.dir/home/user/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime/runtime.c.o
+                0x10004845        0xc CMakeFiles/proj-pico2w.dir/home/user/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime/runtime.c.o
  .rodata.__wrap_malloc.str1.4
-                0x1000484d        0xe CMakeFiles/proj-pico2w.dir/home/user/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_malloc/malloc.c.o
+                0x10004845        0xe CMakeFiles/proj-pico2w.dir/home/user/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_malloc/malloc.c.o
  .rodata.str1.4
-                0x1000484d       0x44 CMakeFiles/proj-pico2w.dir/home/user/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
- *fill*         0x1000484d        0x3 
+                0x10004845       0x44 CMakeFiles/proj-pico2w.dir/home/user/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+ *fill*         0x10004845        0x3 
  .rodata.__bi_84
-                0x10004850        0xc CMakeFiles/proj-pico2w.dir/home/user/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x10004848        0xc CMakeFiles/proj-pico2w.dir/home/user/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .rodata.__bi_78
-                0x1000485c        0xc CMakeFiles/proj-pico2w.dir/home/user/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x10004854        0xc CMakeFiles/proj-pico2w.dir/home/user/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .rodata.__bi_60
-                0x10004868        0xc CMakeFiles/proj-pico2w.dir/home/user/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x10004860        0xc CMakeFiles/proj-pico2w.dir/home/user/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .rodata.__bi_54
-                0x10004874        0xc CMakeFiles/proj-pico2w.dir/home/user/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x1000486c        0xc CMakeFiles/proj-pico2w.dir/home/user/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .rodata.__bi_48
-                0x10004880        0xc CMakeFiles/proj-pico2w.dir/home/user/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x10004878        0xc CMakeFiles/proj-pico2w.dir/home/user/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .rodata.__bi_42
-                0x1000488c        0xc CMakeFiles/proj-pico2w.dir/home/user/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x10004884        0xc CMakeFiles/proj-pico2w.dir/home/user/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .rodata.__bi_34
-                0x10004898        0xc CMakeFiles/proj-pico2w.dir/home/user/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x10004890        0xc CMakeFiles/proj-pico2w.dir/home/user/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .rodata.__bi_26
-                0x100048a4        0xc CMakeFiles/proj-pico2w.dir/home/user/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x1000489c        0xc CMakeFiles/proj-pico2w.dir/home/user/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .rodata._ftoa.str1.4
-                0x100048b0       0x15 CMakeFiles/proj-pico2w.dir/home/user/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_printf/printf.c.o
+                0x100048a8       0x15 CMakeFiles/proj-pico2w.dir/home/user/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_printf/printf.c.o
  .rodata.pow10.0
-                0x100048b0       0x50 CMakeFiles/proj-pico2w.dir/home/user/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_printf/printf.c.o
+                0x100048a8       0x50 CMakeFiles/proj-pico2w.dir/home/user/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_printf/printf.c.o
  .rodata.crlf_str.0
-                0x10004900        0x2 CMakeFiles/proj-pico2w.dir/home/user/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio/stdio.c.o
+                0x100048f8        0x2 CMakeFiles/proj-pico2w.dir/home/user/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio/stdio.c.o
  .rodata.str1.4
-                0x10004902       0x2c CMakeFiles/proj-pico2w.dir/home/user/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
- *fill*         0x10004902        0x2 
+                0x100048fa       0x2c CMakeFiles/proj-pico2w.dir/home/user/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
+ *fill*         0x100048fa        0x2 
  .rodata.__bi_45.4
-                0x10004904        0xc CMakeFiles/proj-pico2w.dir/home/user/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
+                0x100048fc        0xc CMakeFiles/proj-pico2w.dir/home/user/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
  .rodata.__bi_49.5
-                0x10004910        0x8 CMakeFiles/proj-pico2w.dir/home/user/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
+                0x10004908        0x8 CMakeFiles/proj-pico2w.dir/home/user/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
  .rodata.__bi_50.6
-                0x10004918        0x8 CMakeFiles/proj-pico2w.dir/home/user/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
+                0x10004910        0x8 CMakeFiles/proj-pico2w.dir/home/user/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
  .rodata.ssd1306_init.str1.4
-                0x10004920       0x3f CMakeFiles/proj-pico2w.dir/lib/pico-ssd1306/ssd1306.c.o
+                0x10004918       0x3f CMakeFiles/proj-pico2w.dir/lib/pico-ssd1306/ssd1306.c.o
  .rodata.ssd1306_show.str1.4
-                0x10004920        0xd CMakeFiles/proj-pico2w.dir/lib/pico-ssd1306/ssd1306.c.o
+                0x10004918        0xd CMakeFiles/proj-pico2w.dir/lib/pico-ssd1306/ssd1306.c.o
  .rodata.font_8x5
-                0x10004920      0x1e0 CMakeFiles/proj-pico2w.dir/lib/pico-ssd1306/ssd1306.c.o
-                0x10004920                font_8x5
+                0x10004918      0x1e0 CMakeFiles/proj-pico2w.dir/lib/pico-ssd1306/ssd1306.c.o
+                0x10004918                font_8x5
  *(.srodata*)
-                0x10004b00                        . = ALIGN (0x4)
+                0x10004af8                        . = ALIGN (0x4)
  *(SORT_BY_ALIGNMENT(SORT_BY_NAME(.flashdata*)))
-                0x10004b00                        . = ALIGN (0x4)
+                0x10004af8                        . = ALIGN (0x4)
 
-.ARM.extab      0x10004b00        0xc
+.ARM.extab      0x10004af8        0xc
  *(.ARM.extab* .gnu.linkonce.armextab.*)
  .ARM.extab.text.__gnu_Unwind_Resume_or_Rethrow
-                0x10004b00        0xc /home/user/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(unwind-arm.o)
-                0x10004b0c                        __exidx_start = .
+                0x10004af8        0xc /home/user/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(unwind-arm.o)
+                0x10004b04                        __exidx_start = .
 
-.ARM.exidx      0x10004b0c       0xa0
+.ARM.exidx      0x10004b04       0xa0
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
  .ARM.exidx.text._Z11init_buttonj
-                0x10004b0c        0x8 CMakeFiles/proj-pico2w.dir/proj-pico2w.cpp.o
+                0x10004b04        0x8 CMakeFiles/proj-pico2w.dir/proj-pico2w.cpp.o
  .ARM.exidx.text.startup.main
-                0x10004b14       0x10 CMakeFiles/proj-pico2w.dir/proj-pico2w.cpp.o
+                0x10004b0c       0x10 CMakeFiles/proj-pico2w.dir/proj-pico2w.cpp.o
                                   0x8 (size before relaxing)
- .ARM.exidx     0x10004b24        0x0 /home/user/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libg.a(libc_a-memcpy.o)
+ .ARM.exidx     0x10004b1c        0x0 /home/user/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/softfp/libg.a(libc_a-memcpy.o)
                                   0x8 (size before relaxing)
  .ARM.exidx.text.__udivmoddi4
-                0x10004b24        0x0 /home/user/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(_udivmoddi4.o)
+                0x10004b1c        0x0 /home/user/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(_udivmoddi4.o)
                                   0x8 (size before relaxing)
  .ARM.exidx.text.selfrel_offset31
-                0x10004b24        0x0 /home/user/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(unwind-arm.o)
+                0x10004b1c        0x0 /home/user/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(unwind-arm.o)
                                   0x8 (size before relaxing)
  .ARM.exidx.text.search_EIT_table
-                0x10004b24        0x0 /home/user/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(unwind-arm.o)
+                0x10004b1c        0x0 /home/user/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(unwind-arm.o)
                                   0x8 (size before relaxing)
  .ARM.exidx.text.__gnu_unwind_get_pr_addr
-                0x10004b24        0x0 /home/user/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(unwind-arm.o)
+                0x10004b1c        0x0 /home/user/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(unwind-arm.o)
                                   0x8 (size before relaxing)
  .ARM.exidx.text.get_eit_entry
-                0x10004b24        0x8 /home/user/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(unwind-arm.o)
+                0x10004b1c        0x8 /home/user/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(unwind-arm.o)
  .ARM.exidx.text.restore_non_core_regs
-                0x10004b2c        0x8 /home/user/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(unwind-arm.o)
+                0x10004b24        0x8 /home/user/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(unwind-arm.o)
  .ARM.exidx.text._Unwind_decode_typeinfo_ptr.constprop.0
-                0x10004b34        0x8 /home/user/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(unwind-arm.o)
+                0x10004b2c        0x8 /home/user/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(unwind-arm.o)
  .ARM.exidx.text._Unwind_DebugHook
-                0x10004b3c        0x0 /home/user/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(unwind-arm.o)
+                0x10004b34        0x0 /home/user/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(unwind-arm.o)
                                   0x8 (size before relaxing)
  .ARM.exidx.text.unwind_phase2
-                0x10004b3c        0x8 /home/user/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(unwind-arm.o)
+                0x10004b34        0x8 /home/user/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(unwind-arm.o)
  .ARM.exidx.text.unwind_phase2_forced
-                0x10004b44        0x8 /home/user/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(unwind-arm.o)
+                0x10004b3c        0x8 /home/user/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(unwind-arm.o)
  .ARM.exidx.text.__gnu_Unwind_RaiseException
-                0x10004b4c        0x8 /home/user/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(unwind-arm.o)
+                0x10004b44        0x8 /home/user/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(unwind-arm.o)
  .ARM.exidx.text.__gnu_Unwind_ForcedUnwind
-                0x10004b54        0x8 /home/user/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(unwind-arm.o)
+                0x10004b4c        0x8 /home/user/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(unwind-arm.o)
  .ARM.exidx.text.__gnu_Unwind_Resume
-                0x10004b5c        0x8 /home/user/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(unwind-arm.o)
+                0x10004b54        0x8 /home/user/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(unwind-arm.o)
  .ARM.exidx.text.__gnu_Unwind_Resume_or_Rethrow
-                0x10004b64        0x8 /home/user/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(unwind-arm.o)
+                0x10004b5c        0x8 /home/user/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(unwind-arm.o)
  .ARM.exidx.text._Unwind_VRS_Get
-                0x10004b6c        0x8 /home/user/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(unwind-arm.o)
+                0x10004b64        0x8 /home/user/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(unwind-arm.o)
  .ARM.exidx.text._Unwind_GetGR
-                0x10004b74        0x0 /home/user/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(unwind-arm.o)
+                0x10004b6c        0x0 /home/user/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(unwind-arm.o)
                                   0x8 (size before relaxing)
  .ARM.exidx.text._Unwind_VRS_Set
-                0x10004b74        0x0 /home/user/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(unwind-arm.o)
+                0x10004b6c        0x0 /home/user/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(unwind-arm.o)
                                   0x8 (size before relaxing)
  .ARM.exidx.text._Unwind_SetGR
-                0x10004b74        0x0 /home/user/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(unwind-arm.o)
+                0x10004b6c        0x0 /home/user/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(unwind-arm.o)
                                   0x8 (size before relaxing)
  .ARM.exidx.text.__gnu_Unwind_Backtrace
-                0x10004b74        0x8 /home/user/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(unwind-arm.o)
+                0x10004b6c        0x8 /home/user/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(unwind-arm.o)
  .ARM.exidx.text.__gnu_unwind_pr_common
-                0x10004b7c        0x8 /home/user/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(unwind-arm.o)
+                0x10004b74        0x8 /home/user/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(unwind-arm.o)
  .ARM.exidx.text.__aeabi_unwind_cpp_pr0
-                0x10004b84        0x8 /home/user/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(unwind-arm.o)
+                0x10004b7c        0x8 /home/user/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(unwind-arm.o)
  .ARM.exidx.text.__aeabi_unwind_cpp_pr1
-                0x10004b8c        0x0 /home/user/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(unwind-arm.o)
+                0x10004b84        0x0 /home/user/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(unwind-arm.o)
                                   0x8 (size before relaxing)
  .ARM.exidx.text.__aeabi_unwind_cpp_pr2
-                0x10004b8c        0x0 /home/user/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(unwind-arm.o)
+                0x10004b84        0x0 /home/user/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(unwind-arm.o)
                                   0x8 (size before relaxing)
  .ARM.exidx.text._Unwind_VRS_Pop
-                0x10004b8c       0x10 /home/user/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(unwind-arm.o)
+                0x10004b84       0x10 /home/user/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(unwind-arm.o)
                                   0x8 (size before relaxing)
  .ARM.exidx.text.next_unwind_byte
-                0x10004b9c        0x0 /home/user/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(pr-support.o)
+                0x10004b94        0x0 /home/user/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(pr-support.o)
                                   0x8 (size before relaxing)
  .ARM.exidx.text.__gnu_unwind_execute
-                0x10004b9c       0x10 /home/user/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(pr-support.o)
+                0x10004b94       0x10 /home/user/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp/libgcc.a(pr-support.o)
                                   0x8 (size before relaxing)
-                0x10004bac                        __exidx_end = .
-                0x10004bac                        . = ALIGN (0x4)
-                0x10004bac                        __binary_info_start = .
+                0x10004ba4                        __exidx_end = .
+                0x10004ba4                        . = ALIGN (0x4)
+                0x10004ba4                        __binary_info_start = .
 
-.binary_info    0x10004bac       0x2c
+.binary_info    0x10004ba4       0x2c
  *(.binary_info.keep.*)
  .binary_info.keep.__bi_ptr84
-                0x10004bac        0x4 CMakeFiles/proj-pico2w.dir/home/user/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x10004ba4        0x4 CMakeFiles/proj-pico2w.dir/home/user/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .binary_info.keep.__bi_ptr78
-                0x10004bb0        0x4 CMakeFiles/proj-pico2w.dir/home/user/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x10004ba8        0x4 CMakeFiles/proj-pico2w.dir/home/user/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .binary_info.keep.__bi_ptr60
-                0x10004bb4        0x4 CMakeFiles/proj-pico2w.dir/home/user/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x10004bac        0x4 CMakeFiles/proj-pico2w.dir/home/user/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .binary_info.keep.__bi_ptr54
-                0x10004bb8        0x4 CMakeFiles/proj-pico2w.dir/home/user/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x10004bb0        0x4 CMakeFiles/proj-pico2w.dir/home/user/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .binary_info.keep.__bi_ptr48
-                0x10004bbc        0x4 CMakeFiles/proj-pico2w.dir/home/user/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x10004bb4        0x4 CMakeFiles/proj-pico2w.dir/home/user/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .binary_info.keep.__bi_ptr42
-                0x10004bc0        0x4 CMakeFiles/proj-pico2w.dir/home/user/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x10004bb8        0x4 CMakeFiles/proj-pico2w.dir/home/user/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .binary_info.keep.__bi_ptr34
-                0x10004bc4        0x4 CMakeFiles/proj-pico2w.dir/home/user/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x10004bbc        0x4 CMakeFiles/proj-pico2w.dir/home/user/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .binary_info.keep.__bi_ptr26
-                0x10004bc8        0x4 CMakeFiles/proj-pico2w.dir/home/user/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x10004bc0        0x4 CMakeFiles/proj-pico2w.dir/home/user/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  *(.binary_info.*)
  .binary_info.__bi_ptr50
-                0x10004bcc        0x4 CMakeFiles/proj-pico2w.dir/home/user/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
+                0x10004bc4        0x4 CMakeFiles/proj-pico2w.dir/home/user/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
  .binary_info.__bi_ptr49
-                0x10004bd0        0x4 CMakeFiles/proj-pico2w.dir/home/user/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
+                0x10004bc8        0x4 CMakeFiles/proj-pico2w.dir/home/user/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
  .binary_info.__bi_ptr45
-                0x10004bd4        0x4 CMakeFiles/proj-pico2w.dir/home/user/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
-                0x10004bd8                        __binary_info_end = .
-                0x10004bd8                        . = ALIGN (0x4)
+                0x10004bcc        0x4 CMakeFiles/proj-pico2w.dir/home/user/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
+                0x10004bd0                        __binary_info_end = .
+                0x10004bd0                        . = ALIGN (0x4)
 
 .ram_vector_table
                 0x20000000      0x110
@@ -4108,7 +4108,7 @@ LOAD /home/user/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.
                 0x20000110                        . = ALIGN (0x4)
  *(.uninitialized_data*)
 
-.data           0x20000110     0x1a08 load address 0x10004bd8
+.data           0x20000110     0x1a08 load address 0x10004bd0
                 0x20000110                        __data_start__ = .
  *(vtable)
  *(.time_critical*)
@@ -4266,23 +4266,23 @@ LOAD /home/user/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.
                 0x20001b18                        . = ALIGN (0x4)
 
 .tm_clone_table
-                0x20001b18        0x0 load address 0x100065e0
+                0x20001b18        0x0 load address 0x100065d8
  .tm_clone_table
                 0x20001b18        0x0 /home/user/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp/crtbegin.o
  .tm_clone_table
                 0x20001b18        0x0 /home/user/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp/crtend.o
 
-.igot.plt       0x20001b18        0x0 load address 0x100065e0
+.igot.plt       0x20001b18        0x0 load address 0x100065d8
  .igot.plt      0x20001b18        0x0 /home/user/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp/crtbegin.o
 
-.tdata          0x20001b18        0x0 load address 0x100065e0
+.tdata          0x20001b18        0x0 load address 0x100065d8
                 0x20001b18                        . = ALIGN (0x4)
  *(.tdata .tdata.* .gnu.linkonce.td.*)
                 0x20001b18                        __tdata_end = .
                 0x20001b18                        PROVIDE (__data_end__ = .)
-                0x10004bd8                        __etext = LOADADDR (.data)
+                0x10004bd0                        __etext = LOADADDR (.data)
 
-.tbss           0x20001b18        0x0 load address 0x100065e0
+.tbss           0x20001b18        0x0 load address 0x100065d8
                 0x20001b18                        . = ALIGN (0x4)
                 0x20001b18                        __bss_start__ = .
                 0x20001b18                        __tls_base = .
@@ -4290,7 +4290,7 @@ LOAD /home/user/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.
  *(.tcommon)
                 0x20001b18                        __tls_end = .
 
-.bss            0x20001b18      0x3a8 load address 0x100065e0
+.bss            0x20001b18      0x3a8 load address 0x100065d8
                 0x20001b18                        . = ALIGN (0x4)
                 0x20001b18                        __tbss_end = .
  *(SORT_BY_ALIGNMENT(SORT_BY_NAME(.bss*)))
@@ -4353,26 +4353,26 @@ LOAD /home/user/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.
  *fill*         0x20001ebd        0x3 
                 0x20001ec0                        __bss_end__ = .
 
-.heap           0x20001ec0      0x800 load address 0x100065e0
+.heap           0x20001ec0      0x800 load address 0x100065d8
                 0x20001ec0                        __end__ = .
                 0x20001ec0                        end = __end__
  *(.heap*)
  .heap          0x20001ec0      0x800 CMakeFiles/proj-pico2w.dir/home/user/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_crt0/crt0.S.o
                 0x20080000                        __HeapLimit = (ORIGIN (RAM) + LENGTH (RAM))
 
-.scratch_x      0x20080000        0x0 load address 0x100065e0
+.scratch_x      0x20080000        0x0 load address 0x100065d8
                 0x20080000                        __scratch_x_start__ = .
  *(.scratch_x.*)
                 0x20080000                        . = ALIGN (0x4)
                 0x20080000                        __scratch_x_end__ = .
-                0x100065e0                        __scratch_x_source__ = LOADADDR (.scratch_x)
+                0x100065d8                        __scratch_x_source__ = LOADADDR (.scratch_x)
 
-.scratch_y      0x20081000        0x0 load address 0x100065e0
+.scratch_y      0x20081000        0x0 load address 0x100065d8
                 0x20081000                        __scratch_y_start__ = .
  *(.scratch_y.*)
                 0x20081000                        . = ALIGN (0x4)
                 0x20081000                        __scratch_y_end__ = .
-                0x100065e0                        __scratch_y_source__ = LOADADDR (.scratch_y)
+                0x100065d8                        __scratch_y_source__ = LOADADDR (.scratch_y)
 
 .stack1_dummy
  *(.stack1*)
@@ -4381,11 +4381,11 @@ LOAD /home/user/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.
  *(.stack*)
  .stack         0x20081000      0x800 CMakeFiles/proj-pico2w.dir/home/user/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_crt0/crt0.S.o
 
-.flash_end      0x100065e0       0x14
+.flash_end      0x100065d8       0x14
  *(.embedded_end_block*)
  .embedded_end_block
-                0x100065e0       0x14 CMakeFiles/proj-pico2w.dir/home/user/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_crt0/crt0.S.o
-                0x100065f4                        PROVIDE (__flash_binary_end = .)
+                0x100065d8       0x14 CMakeFiles/proj-pico2w.dir/home/user/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_crt0/crt0.S.o
+                0x100065ec                        PROVIDE (__flash_binary_end = .)
                 0x20080000                        __StackLimit = (ORIGIN (RAM) + LENGTH (RAM))
                 0x20081000                        __StackOneTop = (ORIGIN (SCRATCH_X) + LENGTH (SCRATCH_X))
                 0x20082000                        __StackTop = (ORIGIN (SCRATCH_Y) + LENGTH (SCRATCH_Y))
@@ -4499,8 +4499,8 @@ LOAD /home/user/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.
 OUTPUT(proj-pico2w.elf elf32-littlearm)
 LOAD linker stubs
 
-.rel.dyn        0x100065f4        0x0
- .rel.iplt      0x100065f4        0x0 /home/user/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp/crtbegin.o
+.rel.dyn        0x100065ec        0x0
+ .rel.iplt      0x100065ec        0x0 /home/user/.pico-sdk/toolchain/14_2_Rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v8-m.main+fp/softfp/crtbegin.o
 
 .ARM.attributes
                 0x00000000       0x34

@@ -30,12 +30,12 @@ void init_button(uint pin) {
 
 // Check and return name of the pressed button
 const char* get_pressed_button() {
-    if (!gpio_get(BUTTON_PIN_RIGHT)) return "Right";
-    if (!gpio_get(BUTTON_PIN_LEFT)) return "Left";
-    if (!gpio_get(BUTTON_PIN_UP)) return "Up";
-    if (!gpio_get(BUTTON_PIN_DOWN)) return "Down";
-    if (!gpio_get(BUTTON_PIN_CENTER)) return "Center";
-    return "None";
+    if (!gpio_get(BUTTON_PIN_RIGHT)) return "  Right";
+    if (!gpio_get(BUTTON_PIN_LEFT)) return "  Left";
+    if (!gpio_get(BUTTON_PIN_UP)) return "  Up";
+    if (!gpio_get(BUTTON_PIN_DOWN)) return "  Down";
+    if (!gpio_get(BUTTON_PIN_CENTER)) return "  Center";
+    return "Push Buttons;)";
 }
 
 int main() {
@@ -74,7 +74,7 @@ int main() {
         const char* btn = get_pressed_button();
 
         // Draw pressed button to screen
-        snprintf(msg, sizeof(msg), "Button: %s", btn);
+        snprintf(msg, sizeof(msg), "%s", btn);
         ssd1306_clear(&oled);
         ssd1306_draw_string(&oled, 0, 0, 2, msg);
         ssd1306_show(&oled);

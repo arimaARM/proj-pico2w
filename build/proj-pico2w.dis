@@ -5,35 +5,35 @@ Sections:
 Idx Name          Size      VMA       LMA       File off  Algn
   0 .text         000046c0  10000000  10000000  00001000  2**3
                   CONTENTS, ALLOC, LOAD, READONLY, CODE
-  1 .rodata       00000440  100046c0  100046c0  000056c0  2**3
+  1 .rodata       00000438  100046c0  100046c0  000056c0  2**3
                   CONTENTS, ALLOC, LOAD, READONLY, DATA
-  2 .ARM.extab    0000000c  10004b00  10004b00  00005b00  2**2
+  2 .ARM.extab    0000000c  10004af8  10004af8  00005af8  2**2
                   CONTENTS, ALLOC, LOAD, READONLY, DATA
-  3 .ARM.exidx    000000a0  10004b0c  10004b0c  00005b0c  2**2
+  3 .ARM.exidx    000000a0  10004b04  10004b04  00005b04  2**2
                   CONTENTS, ALLOC, LOAD, READONLY, DATA
-  4 .binary_info  0000002c  10004bac  10004bac  00005bac  2**2
+  4 .binary_info  0000002c  10004ba4  10004ba4  00005ba4  2**2
                   CONTENTS, ALLOC, LOAD, READONLY, DATA
   5 .ram_vector_table 00000110  20000000  20000000  00009000  2**2
                   ALLOC
-  6 .uninitialized_data 00000000  20000110  20000110  000085f4  2**0
+  6 .uninitialized_data 00000000  20000110  20000110  000085ec  2**0
                   CONTENTS
-  7 .data         00001a08  20000110  10004bd8  00006110  2**3
+  7 .data         00001a08  20000110  10004bd0  00006110  2**3
                   CONTENTS, ALLOC, LOAD, READONLY, CODE
-  8 .tdata        00000000  20001b18  20001b18  000085f4  2**0
+  8 .tdata        00000000  20001b18  20001b18  000085ec  2**0
                   CONTENTS, ALLOC, LOAD, DATA, THREAD_LOCAL
   9 .tbss         00000000  20001b18  20001b18  00000000  2**0
                   ALLOC, THREAD_LOCAL
- 10 .bss          000003a8  20001b18  100065e0  00008b18  2**3
+ 10 .bss          000003a8  20001b18  100065d8  00008b18  2**3
                   ALLOC
- 11 .heap         00000800  20001ec0  20001ec0  000085f4  2**2
+ 11 .heap         00000800  20001ec0  20001ec0  000085ec  2**2
                   CONTENTS, READONLY
- 12 .scratch_x    00000000  20080000  20080000  00008df4  2**0
+ 12 .scratch_x    00000000  20080000  20080000  00008dec  2**0
                   CONTENTS
- 13 .scratch_y    00000000  20081000  20081000  00008df4  2**0
+ 13 .scratch_y    00000000  20081000  20081000  00008dec  2**0
                   CONTENTS
  14 .stack_dummy  00000800  20081000  20081000  00008e00  2**5
                   CONTENTS, READONLY
- 15 .flash_end    00000014  100065e0  100065e0  000085e0  2**2
+ 15 .flash_end    00000014  100065d8  100065d8  000085d8  2**2
                   CONTENTS, ALLOC, LOAD, READONLY, DATA
  16 .ARM.attributes 00000034  00000000  00000000  00009600  2**0
                   CONTENTS, READONLY
@@ -160,8 +160,8 @@ Disassembly of section .text:
 
 10000124 <binary_info_header>:
 10000124:	7188ebf2 	.word	0x7188ebf2
-10000128:	10004bac 	.word	0x10004bac
-1000012c:	10004bd8 	.word	0x10004bd8
+10000128:	10004ba4 	.word	0x10004ba4
+1000012c:	10004bd0 	.word	0x10004bd0
 10000130:	100001a8 	.word	0x100001a8
 10000134:	e71aa390 	.word	0xe71aa390
 
@@ -169,7 +169,7 @@ Disassembly of section .text:
 10000138:	ffffded3 	.word	0xffffded3
 1000013c:	10210142 	.word	0x10210142
 10000140:	000001ff 	.word	0x000001ff
-10000144:	000064a8 	.word	0x000064a8
+10000144:	000064a0 	.word	0x000064a0
 10000148:	ab123579 	.word	0xab123579
 
 1000014c <_entry_point>:
@@ -231,13 +231,13 @@ Disassembly of section .text:
 100001a6:	bf00      	nop
 
 100001a8 <data_cpy_table>:
-100001a8:	10004bd8 	.word	0x10004bd8
+100001a8:	10004bd0 	.word	0x10004bd0
 100001ac:	20000110 	.word	0x20000110
 100001b0:	20001b18 	.word	0x20001b18
-100001b4:	100065e0 	.word	0x100065e0
+100001b4:	100065d8 	.word	0x100065d8
 100001b8:	20080000 	.word	0x20080000
 100001bc:	20080000 	.word	0x20080000
-100001c0:	100065e0 	.word	0x100065e0
+100001c0:	100065d8 	.word	0x100065d8
 100001c4:	20081000 	.word	0x20081000
 100001c8:	20081000 	.word	0x20081000
 100001cc:	00000000 	.word	0x00000000
@@ -489,8 +489,8 @@ Disassembly of section .text:
 10000448:	2001      	movs	r0, #1
 1000044a:	f002 fdaf 	bl	10002fac <_exit>
 1000044e:	bf00      	nop
-10000450:	10004724 	.word	0x10004724
-10000454:	10004734 	.word	0x10004734
+10000450:	1000471c 	.word	0x1000471c
+10000454:	1000472c 	.word	0x1000472c
 
 10000458 <hw_claim_or_assert>:
 10000458:	b570      	push	{r4, r5, r6, lr}
@@ -1589,7 +1589,7 @@ Disassembly of section .text:
 10000ffc:	f7ff ba2c 	b.w	10000458 <hw_claim_or_assert>
 10001000:	20001e30 	.word	0x20001e30
 10001004:	400b8000 	.word	0x400b8000
-10001008:	10004738 	.word	0x10004738
+10001008:	10004730 	.word	0x10004730
 
 1000100c <timer_time_us_64>:
 1000100c:	4603      	mov	r3, r0
@@ -1981,7 +1981,7 @@ Disassembly of section .text:
 100013b0:	b508      	push	{r3, lr}
 100013b2:	4801      	ldr	r0, [pc, #4]	@ (100013b8 <hard_assertion_failure+0x8>)
 100013b4:	f7ff f838 	bl	10000428 <panic>
-100013b8:	1000475c 	.word	0x1000475c
+100013b8:	10004754 	.word	0x10004754
 
 100013bc <runtime_run_initializers>:
 100013bc:	b538      	push	{r3, r4, r5, lr}
@@ -2444,7 +2444,7 @@ Disassembly of section .text:
 1000186e:	4802      	ldr	r0, [pc, #8]	@ (10001878 <__wrap_malloc+0x20>)
 10001870:	f7fe fdda 	bl	10000428 <panic>
 10001874:	20080000 	.word	0x20080000
-10001878:	10004768 	.word	0x10004768
+10001878:	10004760 	.word	0x10004760
 
 1000187c <_out_buffer>:
 1000187c:	429a      	cmp	r2, r3
@@ -2993,12 +2993,12 @@ Disassembly of section .text:
 10001e08:	00000000 	.word	0x00000000
 10001e0c:	c1cdcd65 	.word	0xc1cdcd65
 10001e10:	7fefffff 	.word	0x7fefffff
-10001e14:	100048b0 	.word	0x100048b0
+10001e14:	100048a8 	.word	0x100048a8
 10001e18:	3fe00000 	.word	0x3fe00000
 10001e1c:	66666667 	.word	0x66666667
-10001e20:	100047bc 	.word	0x100047bc
-10001e24:	100047c4 	.word	0x100047c4
-10001e28:	100047d0 	.word	0x100047d0
+10001e20:	100047b4 	.word	0x100047b4
+10001e24:	100047bc 	.word	0x100047bc
+10001e28:	100047c8 	.word	0x100047c8
 10001e2c:	cccccccd 	.word	0xcccccccd
 10001e30:	2200      	movs	r2, #0
 10001e32:	e9dd 010a 	ldrd	r0, r1, [sp, #40]	@ 0x28
@@ -3151,7 +3151,7 @@ Disassembly of section .text:
 10001fbe:	f47f af74 	bne.w	10001eaa <_ftoa+0x39a>
 10001fc2:	e69e      	b.n	10001d02 <_ftoa+0x1f2>
 10001fc4:	3fe00000 	.word	0x3fe00000
-10001fc8:	100047cb 	.word	0x100047cb
+10001fc8:	100047c3 	.word	0x100047c3
 10001fcc:	00000000 	.word	0x00000000
 
 10001fd0 <_etoa>:
@@ -4825,7 +4825,7 @@ Disassembly of section .text:
 100030c0:	e8bd 41f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, lr}
 100030c4:	4718      	bx	r3
 100030c6:	bf00      	nop
-100030c8:	10004900 	.word	0x10004900
+100030c8:	100048f8 	.word	0x100048f8
 
 100030cc <stdio_buffered_printer>:
 100030cc:	680b      	ldr	r3, [r1, #0]
@@ -5370,9 +5370,9 @@ Disassembly of section .text:
 100035c6:	bf00      	nop
 100035c8:	40070000 	.word	0x40070000
 100035cc:	20001eb8 	.word	0x20001eb8
-100035d0:	10004bd4 	.word	0x10004bd4
-100035d4:	10004bd0 	.word	0x10004bd0
-100035d8:	10004bcc 	.word	0x10004bcc
+100035d0:	10004bcc 	.word	0x10004bcc
+100035d4:	10004bc8 	.word	0x10004bc8
+100035d8:	10004bc4 	.word	0x10004bc4
 100035dc:	20001594 	.word	0x20001594
 
 100035e0 <i2c_write_blocking_internal.constprop.0>:
@@ -5788,9 +5788,9 @@ Disassembly of section .text:
 100039fc:	a880d5ae 	.word	0xa880d5ae
 10003a00:	dac8a114 	.word	0xdac8a114
 10003a04:	20afa6a4 	.word	0x20afa6a4
-10003a08:	10004800 	.word	0x10004800
-10003a0c:	10004810 	.word	0x10004810
-10003a10:	10004830 	.word	0x10004830
+10003a08:	100047f8 	.word	0x100047f8
+10003a0c:	10004808 	.word	0x10004808
+10003a10:	10004828 	.word	0x10004828
 10003a14:	dac8a110 	.word	0xdac8a110
 
 10003a18 <ssd1306_clear>:
@@ -5832,7 +5832,7 @@ Disassembly of section .text:
 10003a70:	b002      	add	sp, #8
 10003a72:	e8bd 87f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, pc}
 10003a76:	bf00      	nop
-10003a78:	10004920 	.word	0x10004920
+10003a78:	10004918 	.word	0x10004918
 
 10003a7c <ssd1306_show>:
 10003a7c:	2222      	movs	r2, #34	@ 0x22
@@ -5909,10 +5909,10 @@ Disassembly of section .text:
 10003b32:	b007      	add	sp, #28
 10003b34:	e8bd 40f0 	ldmia.w	sp!, {r4, r5, r6, r7, lr}
 10003b38:	f7ff bc4a 	b.w	100033d0 <__wrap_printf>
-10003b3c:	10004800 	.word	0x10004800
-10003b40:	10004810 	.word	0x10004810
-10003b44:	10004830 	.word	0x10004830
-10003b48:	10004840 	.word	0x10004840
+10003b3c:	100047f8 	.word	0x100047f8
+10003b40:	10004808 	.word	0x10004808
+10003b44:	10004828 	.word	0x10004828
+10003b48:	10004838 	.word	0x10004838
 
 10003b4c <abort>:
 10003b4c:	2006      	movs	r0, #6
@@ -7617,8 +7617,8 @@ Disassembly of section .data:
 200006bc:	e7e1      	b.n	20000682 <get_eit_entry+0x4e>
 200006be:	bf00      	nop
 200006c0:	00000000 	.word	0x00000000
-200006c4:	10004b0c 	.word	0x10004b0c
-200006c8:	10004bac 	.word	0x10004bac
+200006c4:	10004b04 	.word	0x10004b04
+200006c8:	10004ba4 	.word	0x10004ba4
 
 200006cc <restore_non_core_regs>:
 200006cc:	6803      	ldr	r3, [r0, #0]
