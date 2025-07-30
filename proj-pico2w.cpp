@@ -30,12 +30,12 @@ void init_button(uint pin) {
 
 // Check and return name of the pressed button
 const char* get_pressed_button() {
-    if (!gpio_get(BUTTON_PIN_RIGHT)) return "  Right";
-    if (!gpio_get(BUTTON_PIN_LEFT)) return "  Left";
-    if (!gpio_get(BUTTON_PIN_UP)) return "  Up";
-    if (!gpio_get(BUTTON_PIN_DOWN)) return "  Down";
+    if (!gpio_get(BUTTON_PIN_RIGHT)) return "   Right";
+    if (!gpio_get(BUTTON_PIN_LEFT)) return "   Left";
+    if (!gpio_get(BUTTON_PIN_UP)) return "    Up";
+    if (!gpio_get(BUTTON_PIN_DOWN)) return "   Down";
     if (!gpio_get(BUTTON_PIN_CENTER)) return "  Center";
-    return "Push Buttons;)";
+    return "  Push ;)";
 }
 
 int main() {
